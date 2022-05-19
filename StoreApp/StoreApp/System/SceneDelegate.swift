@@ -16,12 +16,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //Cricao do NavigationController da View Principal
         guard let tela = (scene as? UIWindowScene) else { return }
         self.window = UIWindow(windowScene: tela)
-           let nav1 = UINavigationController()
-           let storyboard = UIStoryboard(name: "Main", bundle: nil)
-           let VC1 = storyboard.instantiateViewController(withIdentifier: "ViewController") as! ViewController
-           nav1.viewControllers = [VC1]
-           self.window!.rootViewController = nav1
-           self.window?.makeKeyAndVisible()
+        let nav1 = UINavigationController()
+        let VC1 = StartPageViewController()
+        nav1.viewControllers = [VC1]
+        self.window!.rootViewController = nav1
+        self.window?.makeKeyAndVisible()
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {

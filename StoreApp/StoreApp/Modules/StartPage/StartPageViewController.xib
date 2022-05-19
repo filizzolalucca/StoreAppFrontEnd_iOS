@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="StartPageViewController" customModule="StoreApp" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="441-y7-sOC" id="h57-qN-JTq"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="441-y7-sOC">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-Wk-KFI">
+                    <rect key="frame" x="0.0" y="209" width="414" height="478"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GFv-0g-PW6">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="116"/>
+                        </imageView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="10s-ga-n7e">
+                            <rect key="frame" x="82" y="180" width="250" height="118"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DAT-rp-RfR">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="CTS-Yx-OBw"/>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kYf-wz-TdG"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqm-47-gka">
+                                    <rect key="frame" x="0.0" y="68" width="250" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1UO-FF-KCh"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="R90-Y5-v1f"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Tu-Lk-Bwx">
+                            <rect key="frame" x="82" y="362" width="250" height="116"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qQf-yS-wN7">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ay4-b7-MnG"/>
+                                        <constraint firstAttribute="height" constant="50" id="uQa-DG-KFS"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Entrar">
+                                        <backgroundConfiguration key="background" cornerRadius="50">
+                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                        </backgroundConfiguration>
+                                        <fontDescription key="titleFontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="16"/>
+                                        <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="goToRegisterPage:" destination="-1" eventType="touchUpInside" id="zC5-OV-WGV"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XPF-eS-arS">
+                                    <rect key="frame" x="0.0" y="66" width="250" height="50"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="50" id="Ovt-wC-zs1"/>
+                                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="ene-c7-azc"/>
+                                    </constraints>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="plain" title="Cadastro">
+                                        <backgroundConfiguration key="background" cornerRadius="50">
+                                            <color key="backgroundColor" red="0.55686277149999996" green="0.1607843041" blue="0.14509806040000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </backgroundConfiguration>
+                                        <fontDescription key="titleFontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="16"/>
+                                        <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
+                                    </buttonConfiguration>
+                                    <connections>
+                                        <action selector="goToRegisterPage:" destination="-1" eventType="touchUpInside" id="YmC-oN-2Dq"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="10s-ga-n7e" firstAttribute="centerY" secondItem="1zE-Wk-KFI" secondAttribute="centerY" id="afV-Fn-Kw4"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="sjZ-mF-eN4"/>
+            <color key="backgroundColor" red="0.35686274509999999" green="0.17254901959999999" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="1zE-Wk-KFI" firstAttribute="trailing" secondItem="sjZ-mF-eN4" secondAttribute="trailing" id="LjI-jw-2AM"/>
+                <constraint firstItem="1zE-Wk-KFI" firstAttribute="leading" secondItem="sjZ-mF-eN4" secondAttribute="leading" id="R12-Js-FcV"/>
+                <constraint firstItem="1zE-Wk-KFI" firstAttribute="centerY" secondItem="441-y7-sOC" secondAttribute="centerY" id="bYw-VF-Uke"/>
+                <constraint firstItem="1zE-Wk-KFI" firstAttribute="centerX" secondItem="441-y7-sOC" secondAttribute="centerX" id="con-Ha-mLT"/>
+            </constraints>
+            <point key="canvasLocation" x="173.91304347826087" y="-658.25892857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo" width="1128" height="1286"/>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
