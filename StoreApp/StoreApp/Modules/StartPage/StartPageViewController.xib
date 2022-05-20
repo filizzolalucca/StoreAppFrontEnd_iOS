@@ -18,7 +18,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-Wk-KFI">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="64" translatesAutoresizingMaskIntoConstraints="NO" id="1zE-Wk-KFI">
                     <rect key="frame" x="0.0" y="209" width="414" height="478"/>
                     <subviews>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="GFv-0g-PW6">
@@ -33,7 +33,7 @@
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="CTS-Yx-OBw"/>
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="kYf-wz-TdG"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lqm-47-gka">
@@ -42,7 +42,7 @@
                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1UO-FF-KCh"/>
                                         <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="R90-Y5-v1f"/>
                                     </constraints>
-                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <fontDescription key="fontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="16"/>
                                     <textInputTraits key="textInputTraits"/>
                                 </textField>
                             </subviews>
@@ -59,7 +59,7 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" title="Entrar">
                                         <backgroundConfiguration key="background" cornerRadius="50">
-                                            <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                            <color key="backgroundColor" red="0.5" green="0.093278874049619862" blue="0.8738301570628253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </backgroundConfiguration>
                                         <fontDescription key="titleFontDescription" name="Arial-BoldItalicMT" family="Arial" pointSize="16"/>
                                         <color key="baseForegroundColor" systemColor="tertiarySystemBackgroundColor"/>
@@ -107,9 +107,6 @@
     </objects>
     <resources>
         <image name="logo" width="1128" height="1286"/>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
